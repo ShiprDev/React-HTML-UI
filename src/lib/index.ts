@@ -1,7 +1,4 @@
-import Div  from './Components/Div';
-import  Button  from './Components/Button';
+import { Div } from './components/Div';
+import { Button } from './components/Button';
 
-export {
-        Div,
-        Button
-};
+export { Div, Button };

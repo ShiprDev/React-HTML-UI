@@ -41,7 +41,7 @@ const defaultProps = {
     border: 'none'
 };
 
-const Div = (props: Partial<DivProps>) => {
+export const Div = (props: Partial<DivProps>) => {
     let updatedProps = {
         ...defaultProps,
         ...props,
@@ -89,4 +89,3 @@ const Div = (props: Partial<DivProps>) => {
     );
 };
 
-export default Div

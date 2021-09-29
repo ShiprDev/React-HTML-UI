@@ -42,7 +42,7 @@ const defaultProps = {
     text: 'Click me!',
 };
 
-const Button = (props: Partial<ButtonProps>) => {
+export const Button = (props: Partial<ButtonProps>) => {
     let updatedProps = {
         ...defaultProps,
         ...props,
@@ -89,5 +89,5 @@ const Button = (props: Partial<ButtonProps>) => {
     );
 };
 
-export default Button;
+
 

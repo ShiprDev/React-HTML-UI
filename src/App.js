@@ -1,5 +1,5 @@
-import Button from './lib/Components/Button';
-import Div from './lib/Components/Div';
+import {Button} from './lib/components/Button';
+import {Div} from './lib/components/Div';
 
 
 function App() {
