@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type ButtonProps = {
+ type ButtonProps = {
     background: React.CSSProperties['background'];
     color: React.CSSProperties['color'];
     flexDirection: React.CSSProperties['flexDirection'];
@@ -43,7 +43,7 @@ const defaultProps = {
     text: 'Click me!',
 };
 
-export const Button = (props: Partial<ButtonProps>) => {
+ const Button = (props: Partial<ButtonProps>) => {
     let updatedProps = {
         ...defaultProps,
         ...props,
@@ -89,5 +89,7 @@ export const Button = (props: Partial<ButtonProps>) => {
             {text}
         </button>
     );
-};
+ };
+
+export default Button;
 

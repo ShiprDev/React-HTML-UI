@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type DivProps = {
+ type DivProps = {
     background: React.CSSProperties['background'];
     color: React.CSSProperties['color'];
     flexDirection: React.CSSProperties['flexDirection'];
@@ -41,7 +41,7 @@ const defaultProps = {
     border: 'none'
 };
 
-export const Div = (props: Partial<DivProps>) => {
+ const Div = (props: Partial<DivProps>) => {
     let updatedProps = {
         ...defaultProps,
         ...props,
@@ -88,3 +88,5 @@ export const Div = (props: Partial<DivProps>) => {
         </div>
     );
 };
+
+export default Div
