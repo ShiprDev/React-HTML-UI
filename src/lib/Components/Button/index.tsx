@@ -1,6 +1,6 @@
 import React from 'react';
 
- type ButtonProps = {
+type ButtonProps = {
     background: React.CSSProperties['background'];
     color: React.CSSProperties['color'];
     flexDirection: React.CSSProperties['flexDirection'];
@@ -15,8 +15,7 @@ import React from 'react';
     marginLeft: React.CSSProperties['marginLeft'];
     marginBottom: React.CSSProperties['marginBottom'];
     marginRight: React.CSSProperties['marginRight'];
-   shadow: React.CSSProperties['boxShadow'];
-    children: React.ReactNode;
+    shadow: React.CSSProperties['boxShadow'];
     radius: React.CSSProperties['borderRadius'];
     display: React.CSSProperties['display'];
     overflow: React.CSSProperties['overflow'];
@@ -43,7 +42,7 @@ const defaultProps = {
     text: 'Click me!',
 };
 
- const Button = (props: Partial<ButtonProps>) => {
+const Button = (props: Partial<ButtonProps>) => {
     let updatedProps = {
         ...defaultProps,
         ...props,
@@ -60,7 +59,6 @@ const defaultProps = {
         margin,
         shadow,
         radius,
-        children,
         width, height, display, overflow, position, text
     } = updatedProps;
 
@@ -76,7 +74,7 @@ const defaultProps = {
                 overflow,
                 background: `rgba(${Object.values(background)})`,
                 color: `rgba(${Object.values(color)})`,
-               padding, margin, boxShadow:
+                padding, margin, boxShadow:
                     shadow === 0
                         ? 'none'
                         : `0px 3px 100px ${shadow}px rgba(0, 0, 0, 0.13)`,
@@ -89,7 +87,7 @@ const defaultProps = {
             {text}
         </button>
     );
- };
+};
 
 export default Button;
 
