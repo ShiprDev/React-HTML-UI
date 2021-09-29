@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ButtonProps = {
+export type ButtonProps = {
     background: React.CSSProperties['background'];
     color: React.CSSProperties['color'];
     flexDirection: React.CSSProperties['flexDirection'];

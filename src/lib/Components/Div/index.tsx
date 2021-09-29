@@ -1,6 +1,6 @@
 import React from 'react';
 
-type DivProps = {
+export type DivProps = {
     background: React.CSSProperties['background'];
     color: React.CSSProperties['color'];
     flexDirection: React.CSSProperties['flexDirection'];
