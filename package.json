@@ -9,7 +9,7 @@
     "semantic",
     "html"
   ],
-  "version": "0.0.16",
+  "version": "0.0.17",
   "repository": {
     "type": "git",
     "url": "https://github.com/yhdesai/React-HTML-UI.git"
@@ -22,7 +22,6 @@
   "homepage": "https://github.com/yhdesai/React-HTML-UI#readme",
   "main": "lib",
   "types": "lib",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
